@@ -18,7 +18,6 @@ namespace View
             catch (NullReferenceException)
             {
                 Console.WriteLine("Нет имени владельца автомобиля " + car.Model);
-                Console.WriteLine();
             }
             Driver newDriver = new Driver(new DateTime(1990, 10, 10), "Вольдемар");
 
@@ -28,6 +27,7 @@ namespace View
             newDriver.Category = newDriver.Category.Insert(2, "D");
 
             car.ChangeOwner(newDriver, "о777оо");
+            Console.WriteLine();
             Console.WriteLine("Номер машины " + car.Model + ": " + newDriver.Car.CarNumber);
 
             Console.WriteLine("Владелец машины " + car.Model + ": " + car.CarPassport.Owner.Name);

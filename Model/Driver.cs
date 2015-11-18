@@ -20,14 +20,11 @@ namespace Model
 
         public void OwnCar(Car car)
         {
-            try
-            {
                 if (Category.Contains(car.Category))
                 {
                     Car = car;
                 }
-            }
-            catch (NullReferenceException)
+            else
             {
                 Console.WriteLine("Водитель не обладает нужной категорией");
             }
