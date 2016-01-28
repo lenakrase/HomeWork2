@@ -8,29 +8,39 @@ namespace View
     {
         static void Main(string[] args)
         {
-            Car car = new Car("Лада", 'D');
+            Car car = new Car("Лада", "D");
 
+           
+            Driver driver = new Driver(new DateTime(1990, 10, 10), "Вольдемар");
+
+            driver.Category = "BC";
             car.Color = Color.DarkMagenta;
+
             try
             {
                 Console.WriteLine(car.CarPassport.Owner.Name);
             }
             catch (NullReferenceException)
             {
-                Console.WriteLine("Нет имени владельца автомобиля " + car.Model);
+                Console.WriteLine("Нет имени владельца автомобиля ");
             }
-            Driver newDriver = new Driver(new DateTime(1990, 10, 10), "Вольдемар");
 
-            newDriver.Category = "BC";
-            car.ChangeOwner(newDriver, "о777оо");
+            try
+            {
+            car.ChangeOwner(driver, "о777оо");
+            }
+            catch (MyException e)
+            {
+                
+                Console.WriteLine(e.Message);
+            }
 
-            newDriver.Category = newDriver.Category.Insert(2, "D");
+            driver.Category = driver.Category.Insert(2, "D");
 
-            car.ChangeOwner(newDriver, "о777оо");
+            car.ChangeOwner(driver, "о777оо");
             Console.WriteLine();
-            Console.WriteLine("Номер машины " + car.Model + ": " + newDriver.Car.CarNumber);
-
-            Console.WriteLine("Владелец машины " + car.Model + ": " + car.CarPassport.Owner.Name);
+            Console.WriteLine("Номер машины : "  + driver.Car.CarNumber);
+            Console.WriteLine("Владелец машины : " +  car.CarPassport.Owner.Name);
 
             Console.ReadKey();
 

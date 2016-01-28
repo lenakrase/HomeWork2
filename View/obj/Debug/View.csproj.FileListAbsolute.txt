@@ -6,3 +6,14 @@ C:\Users\Елена\Desktop\Учёба\Курсы\HomeWork-2\View\bin\Debug\Mode
 C:\Users\Елена\Desktop\Учёба\Курсы\HomeWork-2\View\bin\Debug\Model.pdb
 C:\Users\Елена\Desktop\Учёба\Курсы\HomeWork-2\View\obj\Debug\View.exe
 C:\Users\Елена\Desktop\Учёба\Курсы\HomeWork-2\View\obj\Debug\View.pdb
+C:\Users\Елена\Desktop\HomeWork2-master\View\bin\Debug\View.exe.config
+C:\Users\Елена\Desktop\HomeWork2-master\View\obj\Debug\View.exe
+C:\Users\Елена\Desktop\HomeWork2-master\View\obj\Debug\View.pdb
+C:\Users\Елена\Desktop\Учёба\Курсы\HomeWork2-master\View\bin\Debug\View.exe.config
+C:\Users\Елена\Desktop\Учёба\Курсы\HomeWork2-master\View\obj\Debug\View.exe
+C:\Users\Елена\Desktop\Учёба\Курсы\HomeWork2-master\View\obj\Debug\View.pdb
+C:\Users\Елена\Desktop\Учёба\Курсы\HomeWork2-master\View\bin\Debug\View.exe
+C:\Users\Елена\Desktop\Учёба\Курсы\HomeWork2-master\View\bin\Debug\View.pdb
+C:\Users\Елена\Desktop\Учёба\Курсы\HomeWork2-master\View\bin\Debug\Model.dll
+C:\Users\Елена\Desktop\Учёба\Курсы\HomeWork2-master\View\bin\Debug\Model.pdb
+C:\Users\Елена\Desktop\Учёба\Курсы\HomeWork2-master\View\obj\Debug\View.csprojResolveAssemblyReference.cache

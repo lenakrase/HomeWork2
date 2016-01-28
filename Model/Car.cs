@@ -5,7 +5,7 @@ namespace Model
 {
     public class Car
     {
-        public Car(string model, char category)
+        public Car(string model, string category)
         {
             Model = model;
             Category = category;
@@ -15,17 +15,15 @@ namespace Model
         public string Model { get; }
         public Color Color { get; set; } = Color.Blue;
         public string CarNumber { get; private set; }
-        public char Category { get; }
+        public string Category { get; }
 
         public CarPassport CarPassport { get; }
 
-        public void ChangeOwner(Driver newDriver, string carNumber)
+        public void ChangeOwner(Driver driver, string carNumber)
         {
-
-            CarPassport.Owner = newDriver;
-            newDriver.OwnCar(this);
+            driver.OwnCar(this);
+            CarPassport.Owner = driver;
             CarNumber = carNumber;
-
         }
     }
 }
